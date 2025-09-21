@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Nowreen Islam — Portfolio</title>
-  <meta name="description" content="Personal portfolio of Your Name — Graphics Designer" />
+  <meta name="description" content="Personal portfolio of Nowreen Islam — Graphics Designer" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
   <style>
     :root{
@@ -18,20 +18,49 @@
       --nav-height:72px;
       color-scheme: dark;
     }
+
     *{box-sizing:border-box}
     body{
-      margin:0;font-family:Inter,system-ui,-apple-system; background: linear-gradient(180deg,var(--bg),#071024 60%);
+      margin:0;
+      font-family:Inter,system-ui,-apple-system;
+      background: linear-gradient(180deg,var(--bg),#071024 60%);
       color:#e6eef8; line-height:1.4;
     }
-    header{position:sticky;top:0;z-index:40;height:var(--nav-height);backdrop-filter: blur(6px);
-      display:flex;align-items:center;justify-content:space-between;padding:0 24px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
-      border-bottom:1px solid rgba(255,255,255,0.03);}
+
+    header{
+      position:sticky; top:0; z-index:40; height:var(--nav-height);
+      backdrop-filter: blur(6px);
+      display:flex; align-items:center; justify-content:space-between;
+      padding:0 24px;
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+      border-bottom:1px solid rgba(255,255,255,0.03);
+    }
+
     .brand{display:flex;align-items:center;gap:12px}
-    .logos{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff}
-    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+    .logos{
+      width:44px;height:44px;border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),#06b6d4);
+      display:flex;align-items:center;justify-content:center;
+      font-weight:800;color:#fff;
+    }
+
+    nav a{
+      color:var(--muted);
+      text-decoration:none;
+      margin-left:18px;
+      font-weight:600;
+    }
+
     nav a:hover{color:#fff}
     main{max-width:1100px;margin:36px auto;padding:0 20px}
-    .card{background:linear-gradient(180deg,var(--glass),transparent);padding:28px;border-radius:var(--radius);box-shadow:0 6px 30px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+    .card{
+      background:linear-gradient(180deg,var(--glass),transparent);
+      padding:28px;
+      border-radius:var(--radius);
+      box-shadow:0 6px 30px rgba(2,6,23,0.6);
+      border:1px solid rgba(255,255,255,0.03);
+    }
+
     h2{margin-top:0}
     .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:12px}
     .project{padding:16px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border:1px solid rgba(255,255,255,0.03)}
@@ -41,486 +70,244 @@
     .tag-pill{padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.03);font-size:13px;color:var(--muted)}
     footer{text-align:center;color:var(--muted);margin-top:36px}
 
-    
-    
     .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
-  margin-top: 20px;
-}
-.gallery-item {
-  text-align: center;
-}
-.gallery img {
-  width: 100%;
-  border-radius: 12px;
-  object-fit: cover;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.gallery img:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 6px 20px rgba(0,0,0,0.2);
-}
-.caption {
-  margin-top: 8px;
-  font-size: 14px;
-  color: #555;
-}
-
-section {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
     }
+
+    .gallery-item {text-align: center;}
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 6px 20px rgba(0,0,0,0.2);
+    }
+
+    .caption {margin-top: 8px;font-size: 14px;color: #555;}
+
+    section {max-width: 900px;margin: auto;padding: 40px 20px;}
     h2 {
       border-bottom: 2px solid #444;
       padding-bottom: 8px;
       margin-bottom: 20px;
       color: #222;
     }
-    .highlight {
-      color: #d35400;
-      font-weight: bold;
-    }
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    ul li {
-      margin-bottom: 10px;
-    }
-    .project {
-      margin-bottom: 20px;
-    }
-    footer {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 30px;
+
+    .highlight {color: #d35400;font-weight: bold;}
+    ul {list-style-type: none;padding: 0;}
+    ul li {margin-bottom: 10px;}
+    footer {background: #222;color: white;text-align: center;padding: 15px;margin-top: 30px;}
+
+    .filter-btn {
+      font-size: 16px;
+      padding: 10px 18px;
+      margin: 0 8px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 700;
+      background: transparent;
+      color: var(--accent);
+      border: 2px transparent;
+      border-image: linear-gradient(135deg, var(--accent), #06b6d4) 1;
+      transition: all 0.3s ease;
     }
 
+    .filter-btn:hover {
+      background: linear-gradient(135deg, var(--accent), #06b6d4);
+      color: #fff;
+    }
 
-/* Logos inside gallery - same as posters */
-.gallery-item.logo img {
-  width: 100%;             /* fill the grid box */
-  height: 100%;            /* same height control */
-  border-radius: 12px;     
-  object-fit: cover;       /* same poster style */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-
-.filter-btn {
-  font-size: 16px;
-  padding: 10px 18px;
-  margin: 0 8px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: 700;
-  background: transparent;
-  color: var(--accent);  /* text color same as accent */
-
-  /* gradient border */
-  border: 2px  transparent;
-  border-image: linear-gradient(135deg, var(--accent), #06b6d4) 1;
-  
-  transition: all 0.3s ease;
-}
-
-
-/* Hover effect */
-.filter-btn:hover {
-  background: linear-gradient(135deg, var(--accent), #06b6d4);
-  
-  color: #fff;
-}
-
-/* Active (when selected) */
-.filter-btn.active {
-  background: linear-gradient(135deg, var(--accent), #06b6d4);
-  color: #fff;
-  border: none; /* remove border when filled */
-}
-
+    .filter-btn.active {
+      background: linear-gradient(135deg, var(--accent), #06b6d4);
+      color: #fff;
+      border: none;
+    }
   </style>
-
-  
 </head>
-
 
 <body>
   <header>
     <div class="brand">
       <div class="logos">
-  <img src="logo.jpeg" alt="Logo" style="width:100%;height:100%;border-radius:12px;object-fit:cover;">
-</div>
-
-        <div style="font-weight:800">Nowreen</div>
-        
+        <img src="logo.jpeg" alt="Logo" style="width:100%;height:100%;border-radius:12px;object-fit:cover;">
       </div>
+      <div style="font-weight:800">Nowreen</div>
     </div>
     <nav>
-      <nav>
-  <a href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#graphics">Graphics Design</a>
-  <a href="#watercolor">Watercolor</a>
-
-  <a href="#contact">Contact</a>
-</nav>
-
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#graphics">Graphics Design</a>
+      <a href="#watercolor">Watercolor</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  
   <main>
-<section id="home" class="card" style="padding:40px">
-  <div style="display:flex; flex-wrap:wrap; align-items:center; gap:24px; justify-content:center;">
-    
-    <!-- Text Column -->
-    <div style="flex:1; min-width:280px; text-align:left;">
-      <h2 style="margin:0;color:var(--muted);letter-spacing:2px;">HI THERE!</h2>
-      <h1 style="margin:8px 0;font-size:28px;font-weight:800;">
-        I'M 
-        <span style="background:linear-gradient(135deg,var(--accent),#06b6d4);
-                     -webkit-background-clip:text;
-                     -webkit-text-fill-color:transparent;">
-          NOWREEN ISLAM
-        </span>
-      </h1>
-      
-      <p style="max-width:500px;margin-top:12px;line-height:1.6;color:#e6eef8;">
-       I am a Graphics Engineer passionate about creating impactful visuals that inspire and engage. 
-       Alongside design, I have a strong interest in Software Quality Assurance, where I bring curiosity, 
-       perseverance, and dedication to learning tools, analyzing systems, and delivering high-quality 
-       results — and achieving high-quality results excites me.
-    
+    <!-- Home Section -->
+    <section id="home" class="card" style="padding:40px">
+      <div style="display:flex; flex-wrap:wrap; align-items:center; gap:24px; justify-content:center;">
+        <div style="flex:1; min-width:280px; text-align:left;">
+          <h2 style="margin:0;color:var(--muted);letter-spacing:2px;">HI THERE!</h2>
+          <h1 style="margin:8px 0;font-size:28px;font-weight:800;">
+            I'M <span style="background:linear-gradient(135deg,var(--accent),#06b6d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">NOWREEN ISLAM</span>
+          </h1>
+          <p style="max-width:500px;margin-top:12px;line-height:1.6;color:#e6eef8;">
+            I am a Graphics Designer passionate about creating impactful visuals that inspire and engage. Alongside design, I have a strong interest in Software Quality Assurance, bringing curiosity, perseverance, and dedication to learning tools, analyzing systems, and delivering high-quality results.
+          </p>
+          <a href="#about" style="display:inline-block;margin-top:20px;padding:12px 24px;border-radius:10px;background: linear-gradient(135deg,var(--accent),#06b6d4);color:white;font-weight:700;text-decoration:none;transition: transform 0.3s ease;"
+            onmouseover="this.style.transform='scale(1.05)';" 
+            onmouseout="this.style.transform='scale(1)';">
+            Read More
+          </a>
+        </div>
+        <div style="flex:1; min-width:400px; text-align:center;">
+          <img src="nowreen.jpg" alt="Nowreen Islam Picture" style="width:100%; max-width:220px; height:220px; object-fit:cover; border-radius:12px;">
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="card" style="margin-top:24px;padding:40px">
+      <h2 style="font-size:32px;font-weight:700;margin-bottom:16px;background: linear-gradient(135deg,var(--accent),#06b6d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Experience</h2>
+      <ol style="padding-left:20px; color:#e6eef8; line-height:1.6;">
+        <li>
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;">
+            <div style="flex:1; min-width:300px;">
+              <h3 style="font-size:24px;font-weight:700;margin:0 0 8px 0;">Quality Assurance Engineer</h3>
+              <ul style="margin:0;padding-left:20px;color:#e6eef8; list-style-type: disc; line-height:1.6;">
+                <li>Performance testing and automation using JMeter and Playwright</li>
+                <li>Black-box testing and test case writing based on Figma designs</li>
+                <li>Integration testing and bug reporting for the mobile app</li>
+                <li>Integration testing and bug reporting for Generator Place and EuroQuip</li>
+              </ul>
+            </div>
+            <div style="font-weight:600;color:var(--muted);font-size:16px;margin-left:16px;white-space:nowrap;">Brain Station 23</div>
+          </div>
+        </li>
+        <li>
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;">
+            <div style="flex:1; min-width:300px;">
+              <h3 style="font-size:24px;font-weight:700;margin:0 0 8px 0;">Graphics Designer</h3>
+              <ul style="margin:0;padding-left:20px;color:#e6eef8; list-style-type: disc; line-height:1.6;">
+                <li>Designed event banners, posters, and promotional materials for IEEE BUP & BUP Robotics Club</li>
+                <li>Created visually appealing content to enhance engagement and branding</li>
+              </ul>
+            </div>
+            <div style="font-weight:600;color:var(--muted);font-size:16px;margin-left:16px;white-space:nowrap;">IEEE BUP & BUP Robotics Club</div>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Graphics Design Section -->
+    <section id="graphics" class="card" style="margin-top:24px;">
+      <h2 style="font-size:32px;font-weight:700;margin-bottom:16px;background: linear-gradient(135deg,var(--accent),#06b6d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Graphics Design</h2>
+      <p class="small" style="margin-bottom:24px;">
+        I craft designs that <span style="background: linear-gradient(90deg, #ff6ec4, #7873f5);-webkit-background-clip: text;-webkit-text-fill-color: transparent;font-weight: bold;font-size: 1.2em;text-shadow: 2px 2px 4px rgba(0,0,0,0.3);transition: transform 0.3s ease;" 
+          onmouseover="this.style.transform='scale(1.2)'" 
+          onmouseout="this.style.transform='scale(1)'">speak louder than words</span>. From posters and logos to digital art, every piece I create is meant to capture attention and leave a lasting impression.
+          My experience includes designing impactful posters for my university club and creating a distinctive logo for a 
+          newly established school, showcasing my ability to deliver meaningful and creative visual solutions.
       </p>
-      <a href="#about" style="
-          display:inline-block;
-          margin-top:20px;
-          padding:12px 24px;
-          border-radius:10px;
-          background: linear-gradient(135deg,var(--accent),#06b6d4);
-          color:white;
-          font-weight:700;
-          text-decoration:none;
-          transition: transform 0.3s ease;
-        "
-        onmouseover="this.style.transform='scale(1.05)';" 
-        onmouseout="this.style.transform='scale(1)';"
-      >
-     Read More
-      </a>
-    </div>
 
-    <!-- Picture Column -->
-<div style="flex:1; min-width:400px; text-align:center;">
-  <img src="nowreen.jpg" alt="Nowreen Islam Picture" 
-       style="width:100%; max-width:220px; height:220px; object-fit:cover; border-radius:12px;">
-</div>
-
-</section>
-<section id="about" class="card" style="margin-top:24px;padding:40px">
-  <div style="display:flex;align-items:flex-start;gap:20px;flex-wrap:wrap">
-    
-    <!-- About Content -->
-    
-    <!-- EXPERIENCE SECTION -->
-<div style="margin-top:40px;">
-  <h2 style="
-      font-size:32px;
-      font-weight:700;
-      margin-bottom:16px;
-      background: linear-gradient(135deg,var(--accent),#06b6d4);
-      -webkit-background-clip:text;
-      -webkit-text-fill-color:transparent;
-    ">
-    Experience
-  </h2>
-
-  <ol style="padding-left:20px; color:#e6eef8; line-height:1.6;">
-    <!-- QA Engineer Entry -->
-     
-      <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;">
-        <div style="flex:1; min-width:300px;">
-          <h3 style="font-size:24px;font-weight:700;margin:0 0 8px 0;">Quality Assurance Engineer</h3>
-          <ul style="margin:0;padding-left:20px;color:#e6eef8; list-style-type: disc; line-height:1.6;">
-            <li>Performance testing and automation using JMeter and Playwright</li>
-            <li>Black-box testing and test case writing based on Figma designs</li>
-            <li>Integration testing and bug reporting for the mobile app</li>
-            <li>Integration testing and bug reporting for Generator Place and EuroQuip</li>
-          </ul>
-        </div>
-        <div style="font-weight:600;color:var(--muted);font-size:16px;margin-left:16px;white-space:nowrap;">
-          Brain Station 23
-        </div>
+      <div style="text-align:center; margin-bottom:20px;">
+        <button class="filter-btn active" onclick="filterGallery('all')">All</button>
+        <button class="filter-btn" onclick="filterGallery('poster')">Posters</button>
+        <button class="filter-btn" onclick="filterGallery('logo')">Logos</button>
+        <button class="filter-btn" onclick="filterGallery('art')">Random Art</button>
       </div>
-         
-    <!-- Graphics Designer Entry -->
-    
-      <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;">
-        <div style="flex:1; min-width:300px;">
-          <h3 style="font-size:24px;font-weight:700;margin:0 0 8px 0;">Graphics Designer</h3>
-          <ul style="margin:0;padding-left:20px;color:#e6eef8; list-style-type: disc; line-height:1.6;">
-            <li>Designed event banners, posters, and promotional materials for IEEE BUP & BUP Robotics Club</li>
-            <li>Created visually appealing content to enhance engagement and branding</li>
-          </ul>
-        </div>
-        <div style="font-weight:600;color:var(--muted);font-size:16px;margin-left:16px;white-space:nowrap;">
-          IEEE BUP & BUP Robotics Club
-        </div>
+
+      <div class="gallery">
+        <!-- Posters -->
+        <div class="gallery-item poster"><img src="RC_EID(Robot).png" alt="Poster Design1"></div>
+        <div class="gallery-item poster"><img src="Falgun-Wie (2).png" alt="Poster Design2"></div>
+        <div class="gallery-item poster"><img src="RC-SHAB-E-BARAT.png" alt="Poster Design3"></div>
+        <div class="gallery-item poster"><img src="RC-21Feb.png" alt="Poster Design4"></div>
+        <div class="gallery-item poster"><img src="Shapla.png" alt="Poster Design5"></div>
+
+        <!-- Logos -->
+        <div class="gallery-item logo"><img src="Logo1.jpg" alt="Logo Design1"></div>
+        <div class="gallery-item logo"><img src="Logo2.png" alt="Logo Design2"></div>
+        <div class="gallery-item logo"><img src="Logo3.jpg" alt="Logo Design3"></div>
+
+        <!-- Random Art -->
+        <div class="gallery-item art"><img src="queen.png" alt="Random Art1"></div>
+        <div class="gallery-item art"><img src="alone.png" alt="Random Art2"></div>
+        <div class="gallery-item art"><img src="palletPractise.png" alt="Random Art3"></div>
+        <div class="gallery-item art"><img src="eyes.png" alt="Random Art4"></div>
+        <div class="gallery-item art"><img src="new.png" alt="Random Art5"></div>
+        <div class="gallery-item art"><img src="BlackGirl.png" alt="Random Art6"></div>
       </div>
-    
-  </ol>
-</div>
+    </section>
 
+    <!-- Watercolor Section -->
+    <section id="watercolor" class="card" style="margin-top:24px;">
+      <h2 style="font-size:32px;font-weight:700;margin-bottom:16px;background: linear-gradient(135deg,var(--accent),#06b6d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Watercolor</h2>
+      <p class="small" style="margin-bottom:24px;">
+        My watercolor creations capture the organic beauty and fluidity of traditional paint, while my experience with digital illustration informs composition, color balance, and design principles, creating a bridge between classic techniques and modern visual storytelling.
+      </p>
 
-<!-- Graphics Design Section -->
-<section id="graphics" class="card" style="margin-top:24px;">
-  <h2 style="
-      font-size:32px;
-      font-weight:700;
-      margin-bottom:16px;
-      background: linear-gradient(135deg,var(--accent),#06b6d4);
-      -webkit-background-clip:text;
-      -webkit-text-fill-color:transparent;
-  ">
-    Graphics Design </h2>
-<p class="small" style="margin-bottom:24px;">
-  I craft designs that 
-  <span style="
-    background: linear-gradient(90deg, #ff6ec4, #7873f5);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-    font-size: 1.2em;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    transition: transform 0.3s ease;
-  " 
-  onmouseover="this.style.transform='scale(1.2)'" 
-  onmouseout="this.style.transform='scale(1)'">
-    speak louder than words</span>. From posters and logos to digital art, every piece I create 
-    is meant to capture attention and leave a lasting impression. My experience includes designing 
-    impactful posters for my university club and creating a distinctive logo for a newly established school, 
-    showcasing my ability to deliver meaningful and creative visual solutions.
-</p>
+      <div style="text-align:center; margin-bottom:20px;">
+        <button class="filter-btn active" onclick="filterGallery('all')">All</button>
+        <button class="filter-btn" onclick="filterGallery('gogh')">Van Gogh</button>
+      </div>
 
-  <!-- Filter Buttons -->
-  <div style="text-align:center; margin-bottom:20px;">
-    <button class="filter-btn active" onclick="filterGallery('all')">All</button>
-    <button class="filter-btn" onclick="filterGallery('poster')">Posters</button>
-    <button class="filter-btn" onclick="filterGallery('logo')">Logos</button>
-    <button class="filter-btn" onclick="filterGallery('art')">Random Art</button>
-  </div>
+      <div class="gallery">
+        <div class="gallery-item gogh"><img src="van1.jpeg" alt="Van Gogh Design1"></div>
+        <div class="gallery-item gogh"><img src="van2.jpeg" alt="Van Gogh Design2"></div>
+        <div class="gallery-item gogh"><img src="van3.jpeg" alt="Van Gogh Design3"></div>
+        <div class="gallery-item gogh"><img src="van4.jpeg" alt="Van Gogh Design4"></div>
+        <div class="gallery-item gogh"><img src="van5.jpeg" alt="Van Gogh Design5"></div>
+        <div class="gallery-item gogh"><img src="van6.jpeg" alt="Van Gogh Design6"></div>
+        <div class="gallery-item gogh"><img src="van7.jpeg" alt="Van Gogh Design7"></div>
+        <div class="gallery-item gogh"><img src="van8.jpeg" alt="Van Gogh Design8"></div>
+        <div class="gallery-item gogh"><img src="van9.jpeg" alt="Van Gogh Design9"></div>
+        <div class="gallery-item gogh"><img src="van10.jpeg" alt="Van Gogh Design10"></div>
+        <div class="gallery-item gogh"><img src="van11.jpeg" alt="Van Gogh Design11"></div>
+        <div class="gallery-item gogh"><img src="van12.jpeg" alt="Van Gogh Design12"></div>
+        <div class="gallery-item gogh"><img src="van13.jpeg" alt="Van Gogh Design13"></div>
+        <div class="gallery-item gogh"><img src="van14.jpeg" alt="Van Gogh Design14"></div>
+        <div class="gallery-item gogh"><img src="van15.jpeg" alt="Van Gogh Design15"></div>
+        <div class="gallery-item gogh"><img src="van16.jpeg" alt="Van Gogh Design16"></div>
+        <div class="gallery-item gogh"><img src="van17.jpeg" alt="Van Gogh Design17"></div>
+        <div class="gallery-item gogh"><img src="van18.jpeg" alt="Van Gogh Design18"></div>
+        <div class="gallery-item gogh"><img src="van19.jpeg" alt="Van Gogh Design19"></div>
+        <div class="gallery-item gogh"><img src="van20.jpeg" alt="Van Gogh Design20"></div>
+        <div class="gallery-item gogh"><img src="van21.jpeg" alt="Van Gogh Design21"></div>
+      </div>
+    </section>
 
-  <!-- Gallery -->
-  <div class="gallery">
-    <!-- Posters -->
-    <div class="gallery-item poster">
-      <img src="RC_EID(Robot).png" alt="Poster Design1">
-    </div>
-    <div class="gallery-item poster">
-      <img src="Falgun-Wie (2).png" alt="Poster Design2">
-    </div>
-    <div class="gallery-item poster">
-      <img src="RC-SHAB-E-BARAT.png" alt="Poster Design3">
-    </div>
-    <div class="gallery-item poster">
-      <img src="RC-21Feb.png" alt="Poster Design4">
-    </div>
-    <div class="gallery-item poster">
-      <img src="Shapla.png" alt="Poster Design5">
-    </div>
-
-    <!-- Logos -->
-    <div class="gallery-item logo">
-      <img src="Logo1.jpg" alt="Logo Design1">
-    </div>
-    <div class="gallery-item logo">
-      <img src="Logo2.png" alt="Logo Design2">
-    </div>
-    <div class="gallery-item logo">
-      <img src="Logo3.jpg" alt="Logo Design3">
-    </div>
-
-    <!-- Random Art -->
-    <div class="gallery-item art">
-      <img src="queen.png" alt="Random Art1">
-    </div>
-    <div class="gallery-item art">
-      <img src="alone.png" alt="Random Art2">
-    </div>
-    <div class="gallery-item art">
-      <img src="palletPractise.png" alt="Random Art3">
-    </div>
-    <div class="gallery-item art">
-      <img src="eyes.png" alt="Random Art4">
-    </div>
-    <div class="gallery-item art">
-      <img src="new.png" alt="Random Art5">
-    </div>
-    <div class="gallery-item art">
-      <img src="BlackGirl.png" alt="Random Art6">
-    </div>
-
-
-  </div>
-</section>
-
-
-<!-- WaterColor Section -->
-<section id="watercolor" class="color" style="margin-top:24px;">
-  <h2 style="
-      font-size:32px;
-      font-weight:700;
-      margin-bottom:16px;
-      background: linear-gradient(135deg,var(--accent),#06b6d4);
-      -webkit-background-clip:text;
-      -webkit-text-fill-color:transparent;
-  ">
-   Watercolor </h2>
-<p class="small" style="margin-bottom:24px;">
-  My watercolor creations capture the organic beauty and fluidity of traditional paint, 
-  while my experience with digital illustration informs composition, color balance, and design principles,
-   creating a bridge between classic techniques and modern visual storytelling.
-</p>
-
-  <!-- Filter Buttons -->
-  <div style="text-align:center; margin-bottom:20px;">
-    <button class="filter-btn active" onclick="filterGallery('all')">All</button>
-    <button class="filter-btn" onclick="filterGallery('gogh')">Van Gogh</button>
-    
-  </div>
-
-  <!-- Gallery -->
-  <div class="gallery">
-    <!-- Van gogh -->
-    <div class="gallery-item gogh">
-      <img src="van1.jpeg" alt="Van Gogh Design1">
-    </div>
-    <div class="gallery-item gogh">
-      <img src="van2.jpeg" alt="Van Gogh Design2">
-    </div>
-    <div class="gallery-item gogh">
-      <img src="van3.jpeg" alt="Van Gogh Design3">
-    </div>
-    <div class="gallery-item gogh">
-      <img src="van4.jpeg" alt="Van Gogh Design4">
-    </div>
-    <div class="gallery-item gogh">
-      <img src="van5.jpeg" alt="Van Gogh Design5">
-    </div>
-    <div class="gallery-item gogh">
-      <img src="van6.jpeg" alt="Van Gogh Design6">
-    </div>
-    <div class="gallery-item gogh">
-      <img src="van7.jpeg" alt="Van Gogh Design7">
-    </div>
-    <div class="gallery-item gogh">
-      <img src="van8.jpeg" alt="Van Gogh Design8">
-    </div>
-    <div class="gallery-item gogh">
-      <img src="van9.jpeg" alt="Van Gogh Design9">
-    </div>
-    <div class="gallery-item gogh">
-      <img src="van10.jpeg" alt="Van Gogh Design10">
-    </div>
-    <div class="gallery-item gogh">
-      <img src="van11.jpeg" alt="Van Gogh Design11">
-    </div>
-    <div class="gallery-item gogh">
-      <img src="van12.jpeg" alt="Van Gogh Design12">
-    </div>
-    <div class="gallery-item gogh">
-      <img src="van13.jpeg" alt="Van Gogh Design13">
-    </div>
-    <div class="gallery-item gogh">
-      <img src="van14.jpeg" alt="Van Gogh Design14">
-    </div>
-    <div class="gallery-item gogh">
-      <img src="van15.jpeg" alt="Van Gogh Design15">
-    </div>
-    <div class="gallery-item gogh">
-      <img src="van16.jpeg" alt="Van Gogh Design16">
-    </div>
-    <div class="gallery-item gogh">
-      <img src="van17.jpeg" alt="Van Gogh Design17">
-    </div>
-    <div class="gallery-item gogh">
-      <img src="van18.jpeg" alt="Van Gogh Design18">
-    </div>
-    <div class="gallery-item gogh">
-      <img src="van19.jpeg" alt="Van Gogh Design19">
-    </div>
-    <div class="gallery-item gogh">
-      <img src="van20.jpeg" alt="Van Gogh Design20">
-    </div>
-    <div class="gallery-item gogh">
-      <img src="van21.jpeg" alt="Van Gogh Design21">
-    </div> 
-   
-  </section>
-
-
-<!-- Script for filtering -->
-<script>
-function filterGallery(category) {
-  let items = document.querySelectorAll('.gallery-item');
-  items.forEach(item => {
-    if (category === 'all' || item.classList.contains(category)) {
-      item.style.display = 'block';
-    } else {
-      item.style.display = 'none';
-    }
-  });
-
-  // Active button style
-  document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
-  event.target.classList.add('active');
-}
-</script>
-
-
-
-
-    <!-- CONTACT -->
+    <!-- Contact Section -->
     <section id="contact" class="card" style="margin-top:24px">
-  <h2 style="
-    font-size:36px;
-    font-weight:800;
-    margin-bottom:30px;
-    background: linear-gradient(135deg,var(--accent),#06b6d4);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-  ">Contact</h2>
-  <p class="small">Want to collaborate? Send me a message and I'll get back to you.</p>
+      <h2 style="font-size:36px;font-weight:800;margin-bottom:30px;background: linear-gradient(135deg,var(--accent),#06b6d4);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Contact</h2>
+      <p class="small">Want to collaborate? Send me a message and I'll get back to you.</p>
 
-  <!-- Formspree contact form -->
-  <form action="https://formspree.io/f/xdkwnoov" method="POST" style="margin-top:12px">
-    <input type="text" name="name" placeholder="Your name" required 
-           style="width:100%;margin-bottom:8px;padding:12px;border-radius:10px;
-                  border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit">
-    
-    <input type="email" name="email" placeholder="Your email" required 
-           style="width:100%;margin-bottom:8px;padding:12px;border-radius:10px;
-                  border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit">
-    
-    <textarea name="message" rows="5" placeholder="Message" required 
-              style="width:100%;margin-bottom:8px;padding:12px;border-radius:10px;
-                     border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit"></textarea>
-    
-    <button type="submit" 
-            style="padding:10px 18px;border:none;border-radius:10px;
-                   background:linear-gradient(90deg,var(--accent),#06b6d4);
-                   color:white;font-weight:700;cursor:pointer">
-      Send
-    </button>
-  </form>
-</section>
-
+      <form action="https://formspree.io/f/xdkwnoov" method="POST" style="margin-top:12px">
+        <input type="text" name="name" placeholder="Your name" required style="width:100%;margin-bottom:8px;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit">
+        <input type="email" name="email" placeholder="Your email" required style="width:100%;margin-bottom:8px;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit">
+        <textarea name="message" rows="5" placeholder="Message" required style="width:100%;margin-bottom:8px;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit"></textarea>
+        <button type="submit" style="padding:10px 18px;border:none;border-radius:10px;background:linear-gradient(90deg,var(--accent),#06b6d4);color:white;font-weight:700;cursor:pointer">Send</button>
+      </form>
+    </section>
   </main>
 
-  
+  <script>
+    function filterGallery(category) {
+      let items = document.querySelectorAll('.gallery-item');
+      items.forEach(item => {
+        item.style.display = (category === 'all' || item.classList.contains(category)) ? 'block' : 'none';
+      });
+
+      document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+  </script>
+</body>
+</html>
